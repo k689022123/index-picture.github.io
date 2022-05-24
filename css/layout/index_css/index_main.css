@@ -8,8 +8,6 @@
   height: 91vh;
 }
 
-.main_picture_scroll { overflow-x: hidden; }
-
 .main_picture_title {
   display: inline-flex;
   width: 84%;
