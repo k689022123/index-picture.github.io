@@ -8,6 +8,10 @@
   height: 91vh;
 }
 
+.main_picture_stamp_word,
+.main_picture_list_01,
+.main_picture_list_02 { overflow-x: hidden; }
+
 .main_picture_title {
   display: inline-flex;
   width: 84%;
