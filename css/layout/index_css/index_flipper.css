@@ -1,0 +1,311 @@
+@media screen and (min-width: 1190px) {
+  .grid-container {
+    margin-top: 65.5px;
+    position: absolute;
+    z-index: 2;
+    right: 6.3%;
+    width: 600px;
+    height: 582px;
+    display: grid;
+    grid-template-columns: [columns-1] 200px [columns-2] 200px [columns-3] 200px [columns-4];
+    grid-template-rows: [row-1] 140px [row-2] 140px [row-3] 140px [row-4] 162;
+  }
+}
+
+@media screen and (max-width: 1190px) and (min-width: 1100px) {
+  .grid-container {
+    margin-top: 65.5px;
+    position: absolute;
+    z-index: 2;
+    right: 7%;
+    width: 600px;
+    height: 582px;
+    display: grid;
+    grid-template-columns: [columns-1] 200px [columns-2] 200px [columns-3] 200px [columns-4];
+    grid-template-rows: [row-1] 140px [row-2] 140px [row-3] 140px [row-4] 162;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .grid-container {
+    margin-top: 65.5px;
+    position: absolute;
+    z-index: -5;
+    right: 3%;
+    width: 600px;
+    height: 582px;
+    display: grid;
+    grid-template-columns: [columns-1] 200px [columns-2] 200px [columns-3] 200px [columns-4];
+    grid-template-rows: [row-1] 140px [row-2] 140px [row-3] 140px [row-4] 162;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .grid-container {
+    display: none;
+  }
+}
+
+img[src*='library-front'],
+img[src*='library-back'] {
+  width: 125px;
+  margin-left: 80px;
+}
+
+img[src*='plum bossom-front'] {
+  width: 75px;
+  margin-left: 95px;
+  margin-top: 25px;
+}
+
+img[src*='plum bossom-back'] {
+  width: 90px;
+  margin-top: 35px;
+  margin-left: 85px;
+}
+
+img[src*='spaMuseum-front'] {
+  width: 125px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+img[src*='spaMuseum-back'] {
+  width: 130px;
+  margin-top: 55px;
+  margin-left: 5px;
+}
+
+img[src*='station-front'] {
+  width: 125px;
+  margin-top: 15px;
+}
+
+img[src*='station-back'] {
+  width: 130px;
+  margin-top: 15px;
+}
+
+img[src*='Confucius-front'],
+img[src*='Confucius-back'] {
+  width: 125px;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+img[src*='National Palace Museum-front'] {
+  width: 100px;
+  margin-left: 60px;
+}
+
+img[src*='National Palace Museum-back'] {
+  width: 125px;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+img[src*='207museum-front'] {
+  width: 115px;
+  margin-top: -20px;
+  margin-left: 55px;
+}
+
+img[src*='207museum-back'] {
+  width: 145px;
+  margin-top: -10px;
+  margin-left: 45px;
+}
+
+img[src*='KnowledgeGod-front'] {
+  width: 100px;
+  margin-left: 130px;
+  margin-top: -52px;
+}
+
+img[src*='KnowledgeGod-back'] {
+  width: 130px;
+  margin-left: 113px;
+  margin-top: -40px;
+}
+
+img[src*='pocketMeuseum-front'] {
+  width: 115px;
+  margin-left: 85px;
+}
+
+img[src*='pocketMeuseum-back'] {
+  width: 150px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+img[src*='Mazu-front'] {
+  width: 140px;
+  margin-top: -15px;
+  margin-left: 60px;
+}
+
+img[src*='Mazu-back'] {
+  width: 180px;
+  margin-top: 0px;
+  margin-left: 45px;
+}
+
+img[src*='chineseCupid-front'],
+img[src*='chineseCupid-back'] {
+  width: 150px;
+  margin-top: -40px;
+  margin-left: 70px;
+}
+
+/* entire container, keeps perspective */
+.flipper {
+  perspective: 1000;
+}
+/* flip the pane when hovered */
+.flipper:hover .flipper_library,
+.flipper.hover .flipper_library {
+  transform: rotateY(180deg);
+}
+
+.flipper,
+.front,
+.back {
+  width: 100px;
+}
+
+/* flip speed goes here */
+.flipper_library {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.flipper:hover .flipper_plum_bossom,
+.flipper.hover .flipper_plum_bossom {
+  transform: rotateY(180deg);
+}
+
+.flipper_plum_bossom {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_spaMuseum,
+.flipper.hover .flipper_spaMuseum {
+  transform: rotateY(180deg);
+}
+
+.flipper_spaMuseum {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_station,
+.flipper.hover .flipper_station {
+  transform: rotateY(180deg);
+}
+
+.flipper_station {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_confucius,
+.flipper.hover .flipper_confucius {
+  transform: rotateY(180deg);
+}
+
+.flipper_confucius {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_national_palace_museum,
+.flipper.hover .flipper_national_palace_museum {
+  transform: rotateY(180deg);
+}
+
+.flipper_national_palace_museum {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_207museum,
+.flipper.hover .flipper_207museum {
+  transform: rotateY(180deg);
+}
+
+.flipper_207museum {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_knowledgeGod,
+.flipper.hover .flipper_knowledgeGod {
+  transform: rotateY(180deg);
+}
+
+.flipper_knowledgeGod {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_pocketMeusum,
+.flipper.hover .flipper_pocketMeusum {
+  transform: rotateY(180deg);
+}
+
+.flipper_pocketMeusum {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_mazu,
+.flipper.hover .flipper_mazu {
+  transform: rotateY(180deg);
+}
+
+.flipper_mazu {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper:hover .flipper_chineseCupid,
+.flipper.hover .flipper_chineseCupid {
+  transform: rotateY(180deg);
+}
+
+.flipper_chineseCupid {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
