@@ -8,3 +8,14 @@ body {
   font-family: 'Kosugi Maru', sans-serif;
   font-weight: 700;
 }
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+body {
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
