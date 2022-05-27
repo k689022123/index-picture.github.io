@@ -171,7 +171,7 @@ img[src*='arrow-icon'] {
 }
 
 .box_text_link:hover .box_text_link a {
-  color: black;
+  color: ;
   border: 1px solid white;
   border-radius: 10px;
 }
